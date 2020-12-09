@@ -1,0 +1,13 @@
+<%- contentFor('body') %>
+<div id="contentFuncionarios">
+    <div id="divCards">
+        <% for( let i = 0; i < users.length; i++ ) { %>
+            <div class="col-8 col-md-3 col-xl-2 funcCard">
+                <h2><%= users[i].username  %></h2>
+                <span>Email: <%= users[i].email %> </span>
+                <span>Cargo: <%= users[i].cargo %> </span>
+            </div>
+        <% } %>
+    </div>
+    <a href="/">Voltar</a>
+</div>
