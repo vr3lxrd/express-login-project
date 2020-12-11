@@ -4,19 +4,22 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon controller/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
     "express-session": "^1.17.1",
     "gulp": "^4.0.2",
-    "mongodb": "^3.6.3"
+    "mongodb": "^3.6.3",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "gulp-sass": "^4.1.0",

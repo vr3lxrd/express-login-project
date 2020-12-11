@@ -2,10 +2,14 @@
 <div id="contentPage">
     <div id="cardLogin" class="col-sm-4">
         <h1>Login</h1>
+        <% if (error === true) { %>
+            <p class="errorMessage"><%= message %> </p>
+        <% } %> 
         <form id="loginForm" method="POST">
             <input class="textButton" type="text" name="username" placeholder="Usuário" required>
             <input class="textButton" type="password" name="password" placeholder="Senha" required>
             <input id="submitButton" type="submit" value="Entrar">
         </form>
+        <a href="/register">Registre-se</a>
     </div>
 </div>
